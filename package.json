@@ -11,6 +11,7 @@
   "engines": {
     "vscode": "^1.95.0"
   },
+  "icon": "osc.png",
   "main": "./out/extension.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,7 +19,8 @@
     "compile": "tsc -p ./",
     "lint": "eslint",
     "pretty": "prettier --check --ignore-unknown .",
-    "watch": "tsc -watch -p ./"
+    "watch": "tsc -watch -p ./",
+    "postversion": "git push && git push --tags && vsce publish"
   },
   "activationEvents": [],
   "contributes": {
