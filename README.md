@@ -13,4 +13,18 @@ Introducing a Copilot chat participant called `@osc` that helps you building sol
 Navigate to the [Web Console](https://app.osaas.io) and register with your email. Signup is free and on the free plan you have access to create one open web service at the time. Upgrade to startup or business plan gives you access to use more open web services at the same time. Create a tenant and you are good to go.
 
 You can now obtain the access token by navigating to Settings / API in the web console. Copy this and add it to the `osc-access-token` configuration in the Eyevinn Open Source Cloud extension settings.
-s
+
+## Development
+
+To develop and extend this extension.
+
+Install dependencies
+
+```
+npm install
+```
+
+Run the `Run Extension` target in the Debug View. This will:
+ - Start a task `npm: watch` to compile the code
+ - Run the extension in a new VS Code window
+ - You will see the @osc chat participant show in the GitHub Copilot Chat view
