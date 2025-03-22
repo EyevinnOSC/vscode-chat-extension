@@ -42,7 +42,7 @@
       }
     ]
   },
-  "author": "",
+  "author": "Eyevinn Technology AB",
   "license": "MIT",
   "dependencies": {
     "@osaas/client-ai": "^0.4.3",
