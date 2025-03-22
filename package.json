@@ -1,5 +1,6 @@
 {
   "name": "osc-architect",
+  "publisher": "eyevinnosc",
   "displayName": "OSC Architect",
   "description": "Let me help you build solutions with open web services.",
   "version": "0.1.0",
