@@ -1,0 +1,56 @@
+{
+  "name": "osc-architect",
+  "displayName": "OSC Architect",
+  "description": "Let me help you build solutions with open web services.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.51.0"
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint",
+    "pretty": "prettier --check --ignore-unknown .",
+    "watch": "tsc -watch -p ./"
+  },
+  "contributes": {
+    "configuration": {
+      "title": "Eyevinn Open Source Cloud",
+      "properties": {
+        "osc-access-token": {
+          "type": "string",
+          "description": "Access token for the OSC API",
+          "default": null
+        }
+      }
+    },
+    "chatParticipants": [
+      {
+        "id": "chat.osc-architect",
+        "name": "osc",
+        "fullName": "OSC Architect",
+        "description": "Let me help you build solutions with open web services.",
+        "isSticky": true
+      }
+    ]
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@osaas/client-ai": "^0.4.3",
+    "@osaas/client-core": "^0.15.1",
+    "@vscode/chat-extension-utils": "^0.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@stylistic/eslint-plugin": "^2.9.0",
+    "@types/node": "^20",
+    "@types/vscode": "^1.95.0",
+    "eslint": "^9.13.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0"
+  }
+}
