@@ -15,6 +15,7 @@
     "pretty": "prettier --check --ignore-unknown .",
     "watch": "tsc -watch -p ./"
   },
+  "activationEvents": [],
   "contributes": {
     "configuration": {
       "title": "Eyevinn Open Source Cloud",
